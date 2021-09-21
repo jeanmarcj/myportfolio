@@ -1,0 +1,39 @@
+// Define variable defaults
+
+$dark-theme-color: #fff;
+$dark-theme-bg: #121212;
+
+/* Define styles for the default root window element */
+:root {
+    --background-color-primary: #fafafa;
+    --background-color-secondary: #ebebeb;
+    --accent-color: #cacaca;
+    --text-primary-color: #222;
+    --element-size: 4rem;
+  }
+/* define styles for the root window with dark - mode preference */
+:root.dark-theme {
+    --background-color-primary: #1e1e1e;
+    --background-color-secondary: #2d2d30;
+    --accent-color: #3f3f3f;
+    --text-primary-color: #ddd;
+}
+
+html, #app {
+    font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--background-color-primary);
+    nav {
+        background-color: var(--background-color-primary);
+    }
+    h1, a {
+        color: var(--text-primary-color);
+    }
+}
+
+
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
