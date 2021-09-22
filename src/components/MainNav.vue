@@ -40,3 +40,10 @@ export default {
   components: { ThemeButton },
 };
 </script>
+
+<style>
+#dropDownFR,
+#dropDownEN {
+  color: var(--text-primary-color);
+}
+</style>

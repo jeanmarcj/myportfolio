@@ -10,6 +10,8 @@ $dark-theme-bg: #121212;
     --accent-color: #cacaca;
     --text-primary-color: #222;
     --element-size: 4rem;
+    --skill-link: rgb(209, 206, 206);
+    --skill-link-hover: white; 
   }
 /* define styles for the root window with dark - mode preference */
 :root.dark-theme {
@@ -26,10 +28,25 @@ html, #app {
     background: var(--background-color-primary);
     nav {
         background-color: var(--background-color-primary);
+        h1, a {
+            color: var(--text-primary-color);
+        }
     }
-    h1, a {
-        color: var(--text-primary-color);
+    .dropdown-item {
+        color: #222;
     }
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+    color: var(--text-primary-color);
+}
+
+p > a {
+    color: var(--text-primary-color);
 }
 
 
