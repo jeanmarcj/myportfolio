@@ -10,6 +10,7 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
+          <b-nav-item @click="scrollMeTo('parcours')">Parcours</b-nav-item>
           <!-- <b-icon-moon
             variant="danger"
             font-scale="2"
@@ -38,6 +39,13 @@ import ThemeButton from "@/components/ThemeButton.vue";
 export default {
   name: "MainNavbar",
   components: { ThemeButton },
+  methods: {
+    scrollMeTo(refName) {
+      let element = this.$refs[refName];
+      console.log(element);
+      return;
+    },
+  },
 };
 </script>
 

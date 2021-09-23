@@ -21,6 +21,11 @@ $dark-theme-bg: #121212;
     --text-primary-color: #ddd;
 }
 
+html, body {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
 html, #app {
     font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -40,6 +45,7 @@ html, #app {
 h1,
 h2,
 h3,
+h4,
 a,
 p {
     color: var(--text-primary-color);
@@ -47,6 +53,10 @@ p {
 
 p > a {
     color: var(--text-primary-color);
+}
+
+.mt-6 {
+    margin-top: 3.5rem;
 }
 
 
