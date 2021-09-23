@@ -14,7 +14,7 @@
       <b-icon-envelope-fill></b-icon-envelope-fill>&nbsp;
       <a href="mailto:jeanmarc.juif@gmail.com">Me contacter par mail</a>
     </p>
-    <h2 class="my-4">Développeur Web Full-Stack</h2>
+    <h2 class="my-4"><strong>Développeur Web Full-Stack</strong></h2>
     <p class="h4">
       Diplomé de la 3wAcadamy en 2015
       <br />
@@ -38,7 +38,7 @@
       </a>
     </p>
 
-    <h3 class="my-5">Compétences</h3>
+    <h3 class="my-5"><strong>Compétences</strong></h3>
 
     <!-- Card deck for skills -->
     <b-card-group deck>
@@ -59,6 +59,76 @@
         </b-link>
       </div>
     </b-card-group>
+
+    <!-- Parcours professionnel -->
+    <h3 class="mt-5 mb-2"><strong>Mon parcours professionnel</strong></h3>
+    <p class="h4">
+      Voici les différentes sociétés avec lesquelles j'ai enrichi mon parcours
+      professionnel.
+    </p>
+    <div class="experience-wrapper d-flex justify-content-between py-5">
+      <div class="">
+        <!-- colonne gauche -->
+        <div class="position-relative d-flex align-items-center">
+          <!-- Intérieur Gauche Intérieur Gauche -->
+          <div class="experience-vertical-bar bg-danger"></div>
+          <div class="experience-circle-round bg-danger"></div>
+          <div class="experience-content">
+            <p class="experience-content-header font-weight-bold">
+              React Participant
+            </p>
+            <p class="experience-content-header">N17R Incubator, Almaty</p>
+            <p class="experience-content-date">Jun 2018 - Aug 2018</p>
+          </div>
+        </div>
+
+        <!-- Expérice suivante -->
+        <div class="position-relative d-flex align-items-center mt-6">
+          <!-- Intérieur Gauche Intérieur Gauche -->
+          <div class="experience-vertical-bar bg-danger"></div>
+          <div class="experience-circle-round bg-danger"></div>
+          <div class="experience-content">
+            <p class="experience-content-header font-weight-bold">
+              Auchan International
+            </p>
+            <p class="experience-content-header">Le Kremlin Bicêtre</p>
+            <p class="experience-content-date">Jun 2018 - Aug 2018</p>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <!-- Colonne droite -->
+        <div class="position-relative d-flex align-items-center">
+          <!-- Intérieur Droit Intérieur Droit -->
+          <div class="experience-vertical-bar"></div>
+          <div class="experience-circle-round"></div>
+          <div class="experience-content">
+            <p class="experience-content-header font-weight-bold">
+              React Participant
+            </p>
+            <p class="experience-content-header">N17R Incubator, Almaty</p>
+            <p class="experience-content-date">Jun 2018 - Aug 2018</p>
+          </div>
+        </div>
+
+        <!-- Expérience suivante -->
+        <div class="position-relative d-flex align-items-center mt-6">
+          <!-- Intérieur Droit Intérieur Droit -->
+          <div class="experience-vertical-bar"></div>
+          <div class="experience-circle-round"></div>
+          <div class="experience-content">
+            <p class="experience-content-header font-weight-bold">
+              Openclarooms Parcours
+            </p>
+            <p class="experience-content-header">Paris 15ème</p>
+            <p class="experience-content-date">Jun 2018 - Aug 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Experience wrapper end -->
+    <!-- Projets réalisés -->
+    <h3 class="mt-5 mb-2"><strong>Mes principaux projets</strong></h3>
   </div>
   <!-- container -->
 </template>
@@ -148,5 +218,39 @@ div a {
     text-decoration: none;
     color: var(--skill-link-hover);
   }
+}
+// Experience
+.experience-wrapper {
+  max-width: 640px;
+}
+.experience-vertical-bar {
+  position: absolute;
+  width: 0.125rem;
+  height: 5rem;
+  top: 3.5rem;
+  left: 0.2rem;
+  background-color: #dc3545;
+}
+.experience-circle-round {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  background-color: #dc3545;
+}
+.experience-content {
+  margin-left: 2rem;
+  .experience-content-header {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+  .experience-content-date {
+    margin-top: 0.125rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+.mt-6 {
+  margin-top: 3.5rem;
 }
 </style>
