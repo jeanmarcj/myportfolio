@@ -40,15 +40,27 @@
       <a href="mailto:jeanmarc.juif@gmail.com">Me contacter par mail</a>
     </p>
     <h2 class="my-4"><strong>Développeur Web Full-Stack</strong></h2>
-    <p class="h4">
-      <a href="img/certificats/Diplôme_3WAcademy.pdf" target="_blank">
-        Diplomé de la 3WAcadamy Paris en 2014
-      </a>
-      <br />
-      Certifié Concepteur Web par l'institut F2i de Neuilly en 2015
-      <br />
-      Diplomé OpenclassRooms Paris parcours développeur web en 2021
-    </p>
+    <section class="h4">
+      <div class="my-1">
+        <a href="./img/certificats/Diplôme_3WAcademy.pdf" target="_blank">
+          Diplomé Concepteur & Intégrateur Web par la 3WAcadamy Paris en 2014
+        </a>
+      </div>
+      <div class="my-1">
+        <a href="./img/certificats/F2I_Attestation_Stage.pdf" target="_blank">
+          Certifié Concepteur Web par l'Institut Européen F2i de Vincennes en
+          2015
+        </a>
+      </div>
+      <div>
+        <a
+          href="./img/certificats/OC_Certificat de scolarité JMJ.pdf"
+          target="_blank"
+        >
+          Diplomé OpenclassRooms Paris parcours Développeur Web en 2021
+        </a>
+      </div>
+    </section>
     <p class="mt-4 social-icons h4">
       <a href="https://github.com/jeanmarcj" target="_blank">
         <b-icon-github class="mr-4"></b-icon-github>
@@ -110,11 +122,37 @@
       </div>
     </b-card-group>
 
-    <h4 class="my-2">Mobile</h4>
+    <h4 class="mt-4 mb-2">Mobile</h4>
+    <b-card-group deck>
+      <div
+        v-for="skill in mobileSkills"
+        :key="skill.id"
+        v-b-tooltip.hover.v-primary
+        v-b-tooltip.hover.html="skill.tipData"
+      >
+        <b-link :href="skill.link" target="_blank">
+          <b-card
+            :title="skill.title"
+            :img-src="skill.img"
+            :img-alt="skill.alt"
+            img-top
+            tag="article"
+            style="max-width: 20rem"
+            class="mb-2 text-center"
+            bg-variant="dark"
+            border-variant="light"
+          >
+          </b-card>
+        </b-link>
+      </div>
+    </b-card-group>
     <!-- **************** -->
     <!-- Projets réalisés -->
     <!-- **************** -->
     <h3 class="mt-5 mb-2" ref="portfolio"><strong>Mes réalisations</strong></h3>
+    <section id="projects">
+      <Projects />
+    </section>
     <!-- ********************** -->
     <!-- Parcours professionnel -->
     <!-- ********************** -->
@@ -226,12 +264,14 @@
 // @ is an alias to /src
 import Experience from "@/components/Experience.vue";
 import ThemeButton from "@/components/ThemeButton.vue";
+import Projects from "@/components/Projects.vue";
 
 export default {
   name: "Home",
   components: {
     Experience,
     ThemeButton,
+    Projects,
   },
   data() {
     return {
@@ -247,56 +287,56 @@ export default {
           link: "https://git-scm.com",
           title: "Git GitHub",
           img: "img/logos/git_logo.png",
-          alt: "Git icon",
+          alt: "Git logo",
         },
         {
           id: 2,
           link: "https://developer.mozilla.org/fr/docs/Web/HTML/Element",
           title: "html5",
           img: "img/logos/html_logo.png",
-          alt: "html icon",
+          alt: "html logo",
         },
         {
           id: 3,
           link: "https://www.css.com/",
           title: "CSS3",
           img: "img/logos/css.svg",
-          alt: "CSS icon",
+          alt: "CSS logo",
         },
         {
           id: 4,
           link: "https://sass-lang.com",
           title: "Sass",
           img: "img/logos/sass_logo.png",
-          alt: "Sass icon",
+          alt: "Sass logo",
         },
         {
           id: 5,
           link: "https://getbootstrap.com",
           title: "Bootstrap",
           img: "img/logos/bootstrap_logo.png",
-          alt: "Boostrap icon",
+          alt: "Boostrap logo",
         },
         {
           id: 6,
           link: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
           title: "JavaScript",
           img: "img/logos/javascript_logo.png",
-          alt: "JavaScript icon",
+          alt: "JavaScript logo",
         },
         {
           id: 7,
           link: "https://jquery.com",
           title: "JQuery",
           img: "img/logos/jquery_logo.png",
-          alt: "Jquery icon",
+          alt: "Jquery logo",
         },
         {
           id: 8,
           link: "https://vuejs.org",
           title: "Vue.js",
           img: "img/logos/vuejs_logo.png",
-          alt: "Vuejs icon",
+          alt: "Vuejs logo",
         },
       ],
       backSkills: [
@@ -305,14 +345,144 @@ export default {
           link: "https://www.mysql.com/fr/",
           title: "MySQL",
           img: "img/logos/MySql_logo.jpg",
-          alt: "MySql icon",
+          alt: "MySql logo",
         },
         {
           id: 2,
+          link: "https://www.mongodb.com/fr-fr",
+          title: "mongoDB",
+          img: "img/logos/mongoDB_logo.png",
+          alt: "mongoDB logo",
+        },
+        {
+          id: 3,
+          link: "./img/certificats/OC_Certificat_API_REST.pdf",
+          title: "API Rest",
+          img: "img/logos/APIRest_logo.png",
+          alt: "API Rest logo",
+        },
+        {
+          id: 4,
           link: "https://www.php.net",
           title: "PHP",
-          img: "img/logos/php8_logo.png",
-          alt: "PHP icon",
+          img: "img/logos/php8_logo.jpeg",
+          alt: "PHP logo",
+        },
+        {
+          id: 5,
+          link: "https://wordpress.com/fr/",
+          title: "WordPress",
+          img: "img/logos/wordpress_logo.png",
+          alt: "WordPress logo",
+        },
+        {
+          id: 6,
+          link: "https://www.doctrine-project.org/index.html",
+          title: "Doctrine",
+          img: "img/logos/doctrine_logo.png",
+          alt: "Doctrine logo",
+        },
+        {
+          id: 7,
+          link: "https://symfony.com/",
+          title: "Symfony",
+          img: "img/logos/symfony_logo.png",
+          alt: "Doctrine logo",
+        },
+        {
+          id: 8,
+          link: "https://nodejs.org/fr/",
+          title: "NodeJS",
+          img: "img/logos/nodejs_logo.png",
+          alt: "Nodejs logo",
+        },
+        {
+          id: 9,
+          link: "https://sequelize.org/",
+          title: "Sequelize",
+          img: "img/logos/sequelize_logo.png",
+          alt: "Sequelize ORM logo",
+        },
+        {
+          id: 10,
+          link: "https://expressjs.com/fr/",
+          title: "ExpressJS",
+          img: "img/logos/express_logo.png",
+          alt: "Sequelize ORM logo",
+        },
+      ],
+      mobileSkills: [
+        {
+          id: 1,
+          link: "https://www.apple.com/fr/swift/",
+          title: "iOS Swift",
+          img: "img/logos/swift_logo.png",
+          alt: "Swift logo",
+          tipData: {
+            title:
+              "iOS Swift les fondamentaux. <a href='./img/certificats/OC_Certificat_Fondamentaux_Swift.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
+        },
+        {
+          id: 2,
+          link: "https://www.apple.com/fr/swift/",
+          title: "Swift POO",
+          img: "img/logos/swift_logo.png",
+          alt: "Swift logo",
+          tipData: {
+            title:
+              "iOS Swift Programmation Orientée Objet.<br/><a href='./img/certificats/OC_Certificat_Swift_POO.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
+        },
+        {
+          id: 3,
+          link: "https://www.apple.com/fr/swift/",
+          title: "iOS",
+          img: "img/logos/ios_logo.png",
+          alt: "iOS logo",
+          tipData: {
+            title:
+              "iOS Introduction.<br /><a href='./img/certificats/OC_Certificat_intro_IOS.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
+        },
+        {
+          id: 4,
+          link: "https://www.apple.com/fr/swift/",
+          title: "iOS MVC",
+          img: "img/logos/ios_logo.png",
+          alt: "iOS logo",
+          tipData: {
+            title:
+              "Créer une application iPhone MVC.<br /><a href='./img/certificats/OC_Certificat_IOS_APP_MVC.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
+        },
+        {
+          id: 5,
+          link: "https://www.apple.com/fr/swift/",
+          title: "Responsive",
+          img: "img/logos/ios_logo.png",
+          alt: "iOS logo",
+          tipData: {
+            title:
+              "Créer une application iPhone Responsive.<br /><a href='./img/certificats/OC_Certificat_IOS_App_Responsive.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
+        },
+        {
+          id: 6,
+          link: "https://www.apple.com/fr/swift/",
+          title: "Navigation",
+          img: "img/logos/ios_logo.png",
+          alt: "iOS logo",
+          tipData: {
+            title:
+              "Gérez la navigation et les formulaires en iOS.<br /><a href='./img/certificats/OC_Certificat_iOS_Navigation.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
       ],
     };
@@ -323,7 +493,7 @@ export default {
       let top = element.offsetTop;
 
       window.scrollTo(0, top);
-      console.log(element);
+      // console.log(element);
       return;
     },
   },
@@ -335,18 +505,13 @@ img {
   object-fit: scale-down;
   margin: 0 auto;
 }
-#app > div:nth-child(2) > p:nth-child(5) > a:hover {
-  color: #dc3545;
-}
-#app > div:nth-child(2) > p.mb-5.h6 > a:hover {
-  color: #dc3545;
+a:hover {
+  text-decoration: none !important;
+  color: #dc3545 !important;
 }
 .social-icons {
   a {
     color: #007bff;
-    &:hover {
-      color: #dc3545;
-    }
   }
 }
 
@@ -355,6 +520,10 @@ img {
   article {
     height: 5rem;
     width: 7rem;
+    border-radius: 1.3rem;
+    &:hover {
+      border-color: #dc3545 !important;
+    }
     img {
       height: 2.5rem;
       width: 5rem;
@@ -363,11 +532,11 @@ img {
     .card-body {
       padding-top: 0.5rem;
       h4 {
-        color: var(--skill-link);
+        color: var(--skill-link) !important;
         font-size: 0.8rem;
         margin-bottom: 0;
         &:hover {
-          color: var(--skill-link-hover);
+          color: var(--skill-link-hover) !important;
         }
       }
     }
