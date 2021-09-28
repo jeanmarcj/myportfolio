@@ -1,0 +1,152 @@
+<template>
+  <div>
+    <p class="h4">
+      Voici quelques-uns de mes projets favoris. Je les ai développés et
+      designés "from scratch".
+    </p>
+    <div class="project-wrapper">
+      <div class="project-text">
+        <div class="project-text-header">
+          <a href="#" class="project-text-header-title">Titre du projet</a>
+          <p class="project-text-header-subtitle">
+            Sous titre du projet plus long
+          </p>
+        </div>
+        <p class="project-text-description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          numquam similique recusandae vel. Molestiae exercitationem, quis nam !
+        </p>
+        <div class="project-text-techno">
+          <p class="project-text-techno-description">React</p>
+          <p class="project-text-techno-description">TypeScript</p>
+          <p class="project-text-techno-description">GraphQL</p>
+        </div>
+        <div class="project-text-icons">
+          <a href="" class="mr-3 position-relative">
+            <div class="" style="transform: none">
+              <b-icon-github scale="1.5"></b-icon-github>
+            </div>
+          </a>
+          <a href="" class="position-relative">
+            <b-icon-box-arrow-in-up-right
+              scale="1.5"
+              animation="fade"
+            ></b-icon-box-arrow-in-up-right>
+          </a>
+        </div>
+      </div>
+      <div class="project-img bg-info"></div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default { name: "Projects" };
+</script>
+
+<style scoped lang="scss">
+.project-wrapper {
+  // border: 1px solid teal;
+  z-index: 1;
+  position: relative;
+  //width: 947px;
+  //height: 308px;
+  .project-text {
+    padding: 1.5rem;
+    .project-text-header {
+      .project-text-header-title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+      }
+      .project-text-header-subtitle {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+    .project-text-description {
+      max-width: 30rem;
+      border-radius: 0.375rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .project-text-techno {
+      display: flex;
+      margin-bottom: 0.5rem;
+      .project-text-techno-description {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        margin-right: 1.25rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .project-text-icons {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+  }
+  .project-img {
+    z-index: -1;
+    height: 100%;
+    transform: none;
+    position: absolute;
+    top: 0;
+    border-radius: 0.5rem;
+    //height: 308px;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-wrapper {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+  .project-text {
+    padding: 0;
+    .project-text-header {
+      text-align: right;
+      .project-text-header-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .project-text-header-subtitle {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    }
+    .project-text-description {
+      margin-left: auto;
+      text-align: right;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    .project-text-techno {
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+      .project-text-techno-description {
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .project-text-icons {
+      justify-content: flex-end;
+    }
+  }
+  .project-img {
+    width: 58.33%;
+    top: -1.5rem;
+    left: 0;
+    right: 0;
+  }
+}
+</style>
