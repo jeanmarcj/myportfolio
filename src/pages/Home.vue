@@ -169,7 +169,7 @@
         <!-- Expérience #1 -->
         <Experience
           header="Manager Commerce EEPG (14 marchés)"
-          company="Auchan Hypermarchés Le Kremlin Bicêtre"
+          company="Auchan Retail France Le Kremlin Bicêtre"
           period="2015 - Nov 2020"
         >
         </Experience>
