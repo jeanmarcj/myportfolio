@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Experience",
   props: {
     header: String,
     company: String,
