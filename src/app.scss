@@ -48,17 +48,23 @@ h3,
 h4,
 a,
 p {
-    color: var(--text-primary-color);
+    color: var(--text-primary-color) !important;
 }
 
-p > a {
-    color: var(--text-primary-color);
+section > div > a:visited,
+section > div > a:focus,
+section > div > a:active
+{
+    color: var(--text-primary-color) !important;
+}
+
+section > div > a:hover {
+    color: #dc3545 !important;
 }
 
 .mt-6 {
     margin-top: 3.5rem;
 }
-
 
 
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)
