@@ -300,7 +300,7 @@
     <!-- Loisirs -->
     <!-- ******* -->
     <h3 class="mt-5 mb-2" ref="loisirs">
-      <strong>Centre d'intérêts</strong>
+      <strong>Centres d'intérêts</strong>
     </h3>
     <!-- ****** -->
     <!-- Footer -->
