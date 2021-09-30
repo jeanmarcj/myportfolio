@@ -7,7 +7,9 @@
     <div class="project-wrapper" v-for="project in projects" :key="project.id">
       <div class="project-text">
         <div class="project-text-header">
-          <a href="#" class="project-text-header-title">{{ project.title }}</a>
+          <a :href="project.projectLink" class="project-text-header-title">
+            {{ project.title }}
+          </a>
           <p class="project-text-header-subtitle">
             {{ project.subtitle }}
           </p>
