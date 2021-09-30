@@ -1,47 +1,78 @@
 <template>
   <div>
     <p class="h4">
-      Voici quelques-uns de mes projets favoris. Je les ai développés et
+      Voici quelques-uns de mes projets favoris.<br />Je les ai développés et
       designés "from scratch".
     </p>
-    <div class="project-wrapper">
+    <div class="project-wrapper" v-for="project in projects" :key="project.id">
       <div class="project-text">
         <div class="project-text-header">
-          <a href="#" class="project-text-header-title">Titre du projet</a>
+          <a href="#" class="project-text-header-title">{{ project.title }}</a>
           <p class="project-text-header-subtitle">
-            Sous titre du projet plus long
+            {{ project.subtitle }}
           </p>
         </div>
-        <p class="project-text-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-          numquam similique recusandae vel. Molestiae exercitationem, quis nam !
+        <p class="project-text-description text-danger">
+          {{ project.description }}
         </p>
         <div class="project-text-techno">
-          <p class="project-text-techno-description">React</p>
-          <p class="project-text-techno-description">TypeScript</p>
-          <p class="project-text-techno-description">GraphQL</p>
+          <p
+            class="project-text-techno-description"
+            v-for="(tech, index) in project.technos"
+            :key="index"
+          >
+            {{ tech }}
+          </p>
         </div>
         <div class="project-text-icons">
-          <a href="" class="mr-3 position-relative">
-            <div class="" style="transform: none">
+          <a
+            :href="project.githubLink"
+            class="mr-3 position-relative"
+            target="_blank"
+          >
+            <div style="transform: none" v-if="project.githubLink">
               <b-icon-github scale="1.5"></b-icon-github>
             </div>
           </a>
-          <a href="" class="position-relative">
-            <b-icon-box-arrow-in-up-right
-              scale="1.5"
-              animation="fade"
-            ></b-icon-box-arrow-in-up-right>
+          <a
+            :href="project.projectLink"
+            class="position-relative"
+            target="_blank"
+          >
+            <div style="transform: none" v-if="project.projectLink">
+              <b-icon-box-arrow-in-up-right
+                scale="1.5"
+                variant="info"
+                animation="fade"
+              ></b-icon-box-arrow-in-up-right>
+            </div>
           </a>
         </div>
       </div>
-      <div class="project-img bg-info"></div>
+      <div class="project-img">
+        <a :href="project.projectLink">
+          <img
+            :src="`./img/screenshots/${project.imgLink}`"
+            :alt="project.title"
+            width="560"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default { name: "Projects" };
+import sourceData from "@/projects.json";
+
+export default {
+  name: "Projects",
+  data() {
+    return {
+      projects: sourceData.projects,
+    };
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -67,10 +98,13 @@ export default { name: "Projects" };
       }
     }
     .project-text-description {
+      font-weight: 500;
       max-width: 30rem;
       border-radius: 0.375rem;
       margin-top: 2rem;
       margin-bottom: 2rem;
+      opacity: 1;
+      z-index: 3;
     }
     .project-text-techno {
       display: flex;
@@ -97,8 +131,13 @@ export default { name: "Projects" };
     transform: none;
     position: absolute;
     top: 0;
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
     //height: 308px;
+    a {
+      img {
+        border-radius: 0.6rem;
+      }
+    }
   }
 }
 
