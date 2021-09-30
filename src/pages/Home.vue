@@ -13,6 +13,13 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item @click="scrollMeTo('portfolio')"> Portfolio</b-nav-item>
           <b-nav-item @click="scrollMeTo('parcours')">Parcours</b-nav-item>
+          <b-nav-item @click="scrollMeTo('formations')">Formations</b-nav-item>
+          <b-nav-item @click="scrollMeTo('recommandations')">
+            Recommandations
+          </b-nav-item>
+          <b-nav-item @click="scrollMeTo('loisirs')">
+            Centre d'intérêts
+          </b-nav-item>
           <ThemeButton />
           <!-- Drop Down -->
           <b-nav-item-dropdown text="Lang" right>
@@ -26,17 +33,21 @@
     <header class="d-flex justify-content-between align-items-center">
       <b-img
         :src="require('../assets/jmj_img.jpg')"
-        alt="Photo de Jean-Marc"
+        alt="Photo de Jean-Marc Juif"
         rounded="circle"
         v-bind="mainProps"
       >
       </b-img>
       <blockquote class="blockquote text-center">
-        <p class="lead mb-1 ml-4">
-          "The purpose of software engineering is to control complexity, not to
-          create it."
+        <p class="lead mt-5 ml-4">
+          <i>
+            "Je cherche un poste de développeur web full-stack.<br />Tenacité,
+            confiance, rigueur et persévérance sont mes valeurs.<br />Je
+            développe des projets en JavaScript, PHP et Swift. J'utilise des
+            framework reconnus comme Symfony et Vue.JS"
+          </i>
         </p>
-        <footer class="blockquote-footer">Pamela Zave</footer>
+        <!-- <footer class="blockquote-footer">Pamela Zave</footer> -->
       </blockquote>
       <!-- <p class="lead mb-1 ml-4">
         "The purpose of software engineering is to control complexity, not to
@@ -76,12 +87,17 @@
       <a href="https://github.com/jeanmarcj" target="_blank">
         <b-icon-github class="mr-4"></b-icon-github>
       </a>
-      <a href=""><b-icon-linkedin class="mr-4"></b-icon-linkedin></a>
+      <a
+        href="https://www.linkedin.com/in/jean-marc-juif-a7bb542"
+        target="_blank"
+      >
+        <b-icon-linkedin class="mr-4"></b-icon-linkedin>
+      </a>
       <a href="https://twitter.com/JeanMarcJ3" target="_blank">
         <b-icon-twitter class="mr-4"></b-icon-twitter>
       </a>
       <a
-        href="./CV_JMJ_2021_dev.pdf"
+        href="./JM_Juif_Dev_Web_FullStack.pdf"
         target="_blank"
         v-b-tooltip.hover
         title="Mon CV en pdf"
@@ -89,9 +105,10 @@
         <i class="bi bi-file-earmark-pdf-fill"></i>
       </a>
     </p>
-
+    <!-- *********** -->
+    <!-- Compétences -->
+    <!-- *********** -->
     <h3 class="my-5"><strong>Compétences</strong></h3>
-
     <h4 class="mb-2">Front-End</h4>
     <!-- Card deck for front skills -->
     <b-card-group deck>
@@ -168,7 +185,7 @@
     <!-- Parcours professionnel -->
     <!-- ********************** -->
     <h3 class="mt-5 mb-2" ref="parcours">
-      <strong>Mon parcours professionnel</strong>
+      <strong>Parcours professionnel</strong>
     </h3>
     <p class="h4">
       Voici les différentes sociétés avec lesquelles j'ai enrichi mon parcours
@@ -267,6 +284,27 @@
       <!-- Experience colonne droite end -->
     </div>
     <!-- Experience wrapper end -->
+    <!-- ********** -->
+    <!-- Formations -->
+    <!-- ********** -->
+    <h3 class="mt-5 mb-2" ref="formations">
+      <strong>Diplômes et Formations</strong>
+    </h3>
+    <!-- *************** -->
+    <!-- Recommandations -->
+    <!-- *************** -->
+    <h3 class="mt-5 mb-2" ref="recommandations">
+      <strong>Recommandations</strong>
+    </h3>
+    <!-- ******* -->
+    <!-- Loisirs -->
+    <!-- ******* -->
+    <h3 class="mt-5 mb-2" ref="loisirs">
+      <strong>Centre d'intérêts</strong>
+    </h3>
+    <!-- ****** -->
+    <!-- Footer -->
+    <!-- ****** -->
     <Footer />
   </div>
   <!-- container -->
@@ -515,6 +553,9 @@ export default {
 </script>
 
 <style lang="scss">
+.navbar-dark .navbar-toggler-icon {
+  background-color: var(--accent-color);
+}
 img {
   object-fit: scale-down;
   margin: 0 auto;
