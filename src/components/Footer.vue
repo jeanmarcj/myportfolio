@@ -5,10 +5,11 @@
       <ul class="mt-3">
         <li class="mr-3">Portfolio développé en HTML, SASS et JavaScript</li>
         <li class="mr-3">
-          Framework <a href="https://fr.vuejs.org/index.html">Vue.JS</a>
+          Framework
+          <a href="https://fr.vuejs.org/index.html" target="_blank">Vue.JS</a>
         </li>
         <li class="mr-3">
-          <a href="https://github.com/jeanmarcj/myportfolio">
+          <a href="https://github.com/jeanmarcj/myportfolio" target="_blank">
             <b-icon-github scale="1.2"></b-icon-github>
           </a>
         </li>
