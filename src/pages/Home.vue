@@ -64,7 +64,7 @@
     <h2 class="my-5"><strong>Développeur Web Full-Stack</strong></h2>
     <section class="h4">
       <div class="my-1">
-        <a href="./img/certificats/Diplôme_3WAcademy.pdf" target="_blank">
+        <a href="./img/certificats/3wAcademy.pdf" target="_blank">
           Diplomé Concepteur & Intégrateur Web par la 3WAcadamy Paris en 2014
         </a>
       </div>
