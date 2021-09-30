@@ -2,7 +2,7 @@
   <div class="container">
     <!-- NavBar -->
     <b-navbar toggleable="lg" type="dark" variant="black">
-      <b-navbar-brand tag="h1" class="mb-0">Jean-Marc Juif</b-navbar-brand>
+      <!-- <b-navbar-brand tag="h1" class="mb-0">Jean-Marc Juif</b-navbar-brand> -->
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
@@ -11,10 +11,8 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item @click="scrollMeTo('parcours')">Mon parcours</b-nav-item>
-          <b-nav-item @click="scrollMeTo('portfolio')">
-            Mon portfolio
-          </b-nav-item>
+          <b-nav-item @click="scrollMeTo('portfolio')"> Portfolio</b-nav-item>
+          <b-nav-item @click="scrollMeTo('parcours')">Parcours</b-nav-item>
           <ThemeButton />
           <!-- Drop Down -->
           <b-nav-item-dropdown text="Lang" right>
@@ -25,13 +23,26 @@
       </b-collapse>
     </b-navbar>
     <!-- NavBar End -->
-    <b-img
-      :src="require('../assets/jmj_img.jpg')"
-      alt="Photo de Jean-Marc"
-      rounded="circle"
-      v-bind="mainProps"
-    >
-    </b-img>
+    <header class="d-flex justify-content-between align-items-center">
+      <b-img
+        :src="require('../assets/jmj_img.jpg')"
+        alt="Photo de Jean-Marc"
+        rounded="circle"
+        v-bind="mainProps"
+      >
+      </b-img>
+      <blockquote class="blockquote text-center">
+        <p class="lead mb-1 ml-4">
+          "The purpose of software engineering is to control complexity, not to
+          create it."
+        </p>
+        <footer class="blockquote-footer">Pamela Zave</footer>
+      </blockquote>
+      <!-- <p class="lead mb-1 ml-4">
+        "The purpose of software engineering is to control complexity, not to
+        create it."
+      </p> -->
+    </header>
     <h1 class="mt-5">Jean-Marc Juif</h1>
     <p class="mb-5 h6">
       <b-icon-phone-fill variant="info"></b-icon-phone-fill>
@@ -39,7 +50,7 @@
       <b-icon-envelope-fill variant="info"></b-icon-envelope-fill>&nbsp;
       <a href="mailto:jeanmarc.juif@gmail.com">Me contacter par mail</a>
     </p>
-    <h2 class="my-4"><strong>Développeur Web Full-Stack</strong></h2>
+    <h2 class="my-5"><strong>Développeur Web Full-Stack</strong></h2>
     <section class="h4">
       <div class="my-1">
         <a href="./img/certificats/Diplôme_3WAcademy.pdf" target="_blank">
@@ -79,7 +90,7 @@
       </a>
     </p>
 
-    <h3 class="my-5"><strong>Mes compétences</strong></h3>
+    <h3 class="my-5"><strong>Compétences</strong></h3>
 
     <h4 class="mb-2">Front-End</h4>
     <!-- Card deck for front skills -->
@@ -256,15 +267,17 @@
       <!-- Experience colonne droite end -->
     </div>
     <!-- Experience wrapper end -->
+    <Footer />
   </div>
   <!-- container -->
 </template>
 
 <script>
 // @ is an alias to /src
-import Experience from "@/components/Experience.vue";
 import ThemeButton from "@/components/ThemeButton.vue";
 import Projects from "@/components/Projects.vue";
+import Experience from "@/components/Experience.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
@@ -272,6 +285,7 @@ export default {
     Experience,
     ThemeButton,
     Projects,
+    Footer,
   },
   data() {
     return {
