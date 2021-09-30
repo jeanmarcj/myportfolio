@@ -77,7 +77,7 @@ export default {
 
 <style scoped lang="scss">
 .project-wrapper {
-  // border: 1px solid teal;
+  // border-top: 1px solid var(--text-primary-color);
   z-index: 1;
   position: relative;
   //width: 947px;
@@ -104,7 +104,7 @@ export default {
       margin-top: 2rem;
       margin-bottom: 2rem;
       opacity: 1;
-      z-index: 3;
+      background-color: white;
     }
     .project-text-techno {
       display: flex;
@@ -131,11 +131,11 @@ export default {
     transform: none;
     position: absolute;
     top: 0;
-    // border-radius: 0.5rem;
     //height: 308px;
     a {
       img {
         border-radius: 0.6rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
       }
     }
   }
