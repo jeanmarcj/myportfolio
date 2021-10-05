@@ -83,102 +83,108 @@
         </a>
       </div>
     </section>
-    <p class="mt-4 social-icons h4">
-      <a href="https://github.com/jeanmarcj" target="_blank">
-        <b-icon-github class="mr-4"></b-icon-github>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/jean-marc-juif-a7bb542"
-        target="_blank"
-      >
-        <b-icon-linkedin class="mr-4"></b-icon-linkedin>
-      </a>
-      <a href="https://twitter.com/JeanMarcJ3" target="_blank">
-        <b-icon-twitter class="mr-4"></b-icon-twitter>
-      </a>
-      <a
-        href="./JM_Juif_Dev_Web_FullStack.pdf"
-        target="_blank"
-        v-b-tooltip.hover
-        title="Mon CV en pdf"
-      >
-        <i class="bi bi-file-earmark-pdf-fill"></i>
-      </a>
-    </p>
+    <section id="socials">
+      <p class="mt-4 social-icons h4">
+        <a href="https://github.com/jeanmarcj" target="_blank">
+          <b-icon-github class="mr-4"></b-icon-github>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jean-marc-juif-a7bb542"
+          target="_blank"
+        >
+          <b-icon-linkedin class="mr-4"></b-icon-linkedin>
+        </a>
+        <a href="https://twitter.com/JeanMarcJ3" target="_blank">
+          <b-icon-twitter class="mr-4"></b-icon-twitter>
+        </a>
+        <a
+          href="./JM_Juif_Dev_Web_FullStack.pdf"
+          target="_blank"
+          v-b-tooltip.hover
+          title="Mon CV en pdf"
+        >
+          <i class="bi bi-file-earmark-pdf-fill"></i>
+        </a>
+      </p>
+    </section>
     <!-- *********** -->
     <!-- Compétences -->
     <!-- *********** -->
-    <h3 class="my-5"><strong>Compétences</strong></h3>
-    <h4 class="mb-2">Front-End</h4>
-    <!-- Card deck for front skills -->
-    <b-card-group deck>
-      <div v-for="skill in frontSkills" :key="skill.id">
-        <b-link :href="skill.link" target="_blank">
-          <b-card
-            :title="skill.title"
-            :img-src="skill.img"
-            :img-alt="skill.alt"
-            img-top
-            tag="article"
-            style="max-width: 20rem"
-            class="mb-2 text-center"
-            bg-variant="dark"
-            border-variant="light"
-          >
-          </b-card>
-        </b-link>
-      </div>
-    </b-card-group>
-
-    <h4 class="mt-4 mb-2">Back-End</h4>
-    <b-card-group deck>
-      <div v-for="skill in backSkills" :key="skill.id">
-        <b-link :href="skill.link" target="_blank">
-          <b-card
-            :title="skill.title"
-            :img-src="skill.img"
-            :img-alt="skill.alt"
-            img-top
-            tag="article"
-            style="max-width: 20rem"
-            class="mb-2 text-center"
-            bg-variant="dark"
-            border-variant="light"
-          >
-          </b-card>
-        </b-link>
-      </div>
-    </b-card-group>
-
-    <h4 class="mt-4 mb-2">Mobile</h4>
-    <b-card-group deck>
-      <div
-        v-for="skill in mobileSkills"
-        :key="skill.id"
-        v-b-tooltip.hover.v-primary
-        v-b-tooltip.hover.html="skill.tipData"
-      >
-        <b-link :href="skill.link" target="_blank">
-          <b-card
-            :title="skill.title"
-            :img-src="skill.img"
-            :img-alt="skill.alt"
-            img-top
-            tag="article"
-            style="max-width: 20rem"
-            class="mb-2 text-center"
-            bg-variant="dark"
-            border-variant="light"
-          >
-          </b-card>
-        </b-link>
-      </div>
-    </b-card-group>
+    <section id="skills">
+      <h3 class="my-5"><strong>Compétences</strong></h3>
+      <h4 class="mb-2">Front-End</h4>
+      <!-- front skills -->
+      <b-card-group deck>
+        <div v-for="skill in frontSkills" :key="skill.id">
+          <b-link :href="skill.link" target="_blank">
+            <b-card
+              :title="skill.title"
+              :img-src="skill.img"
+              :img-alt="skill.alt"
+              img-top
+              tag="article"
+              style="max-width: 20rem"
+              class="mb-2 text-center"
+              bg-variant="dark"
+              border-variant="light"
+            >
+            </b-card>
+          </b-link>
+        </div>
+      </b-card-group>
+      <!-- Back-End skills -->
+      <h4 class="mt-4 mb-2">Back-End</h4>
+      <b-card-group deck>
+        <div v-for="skill in backSkills" :key="skill.id">
+          <b-link :href="skill.link" target="_blank">
+            <b-card
+              :title="skill.title"
+              :img-src="skill.img"
+              :img-alt="skill.alt"
+              img-top
+              tag="article"
+              style="max-width: 20rem"
+              class="mb-2 text-center"
+              bg-variant="dark"
+              border-variant="light"
+            >
+            </b-card>
+          </b-link>
+        </div>
+      </b-card-group>
+      <!-- Mobile Skills -->
+      <h4 class="mt-4 mb-2">Mobile</h4>
+      <b-card-group deck>
+        <div
+          v-for="skill in mobileSkills"
+          :key="skill.id"
+          v-b-tooltip.hover.v-primary
+          v-b-tooltip.hover.html="skill.tipData"
+        >
+          <b-link :href="skill.link" target="_blank">
+            <b-card
+              :title="skill.title"
+              :img-src="skill.img"
+              :img-alt="skill.alt"
+              img-top
+              tag="article"
+              style="max-width: 20rem"
+              class="mb-2 text-center"
+              bg-variant="dark"
+              border-variant="light"
+            >
+            </b-card>
+          </b-link>
+        </div>
+      </b-card-group>
+    </section>
     <!-- **************** -->
     <!-- Projets réalisés -->
     <!-- **************** -->
-    <h3 class="mt-5 mb-2" ref="portfolio"><strong>Mes réalisations</strong></h3>
     <section id="projects">
+      <h3 class="mt-5 mb-2" ref="portfolio">
+        <strong>Mes réalisations</strong>
+      </h3>
       <Projects />
     </section>
     <!-- ********************** -->
@@ -287,50 +293,56 @@
     <!-- ********** -->
     <!-- Formations -->
     <!-- ********** -->
-    <h3 class="mt-5 mb-2" ref="formations">
-      <strong>Diplômes et Formations</strong>
-    </h3>
-    <Formations
-      header="Développeur Web"
-      company="OpenclassRooms Paris"
-      date="2021"
-      description="Intégration HTML et CSS - JavaScript - Optimisation SEO. 7 projets réalisés (site e-commerce en JavaScript, développement d'un back-end sécurisé en NodeJS, création d’une application complète de messagerie en JavaScript, SQL, en NodeJS (Express) et VueJS. 29 certifications OpenclassRooms"
-    >
-    </Formations>
-    <Formations
-      header="Développeur d'applications Web"
-      company="Institut F2I Vincennes"
-      date="2014 - 2015"
-      description="UML - Gestion de projets (ITIL) - JavaScript - MySQL - PHP - Symfony - .net - Apple Swift"
-    >
-    </Formations>
-    <Formations
-      header="Intégrateur Développeur Web"
-      company="3W Academy Paris"
-      date="2014"
-      description="HTML - CSS - JavaScript - JQuery - PHP - MySql - WordPress, Drupal, PrestaShop - Symfony. Développement de 5 projets."
-    >
-    </Formations>
-    <Formations
-      header="BTS Communication & Actions Publicitaires"
-      company="Ecole Supérieure de Publicité - Paris"
-      description="Formation Chef de Publicité"
-    >
-    </Formations>
-    <Formations header="Bac B" company="Sciences Economiques & Sociales">
-    </Formations>
+    <section id="learning">
+      <h3 class="mt-5 mb-2" ref="formations">
+        <strong>Diplômes et Formations</strong>
+      </h3>
+      <Formations
+        header="Développeur Web"
+        company="OpenclassRooms Paris"
+        date="2021"
+        description="Intégration HTML et CSS - JavaScript - Optimisation SEO. 7 projets réalisés (site e-commerce en JavaScript, développement d'un back-end sécurisé en NodeJS, création d’une application complète de messagerie en JavaScript, SQL, en NodeJS (Express) et VueJS. 29 certifications OpenclassRooms"
+      >
+      </Formations>
+      <Formations
+        header="Développeur d'applications Web"
+        company="Institut F2I Vincennes"
+        date="2014 - 2015"
+        description="UML - Gestion de projets (ITIL) - JavaScript - MySQL - PHP - Symfony - .net - Apple Swift"
+      >
+      </Formations>
+      <Formations
+        header="Intégrateur Développeur Web"
+        company="3W Academy Paris"
+        date="2014"
+        description="HTML - CSS - JavaScript - JQuery - PHP - MySql - WordPress, Drupal, PrestaShop - Symfony. Développement de 5 projets."
+      >
+      </Formations>
+      <Formations
+        header="BTS Communication & Actions Publicitaires"
+        company="Ecole Supérieure de Publicité - Paris"
+        description="Formation Chef de Publicité"
+      >
+      </Formations>
+      <Formations header="Bac B" company="Sciences Economiques & Sociales">
+      </Formations>
+    </section>
     <!-- *************** -->
     <!-- Recommandations -->
     <!-- *************** -->
-    <h3 class="mt-5 mb-2" ref="recommandations">
+    <h3 class="my-5" ref="recommandations">
       <strong>Recommandations</strong>
     </h3>
+    <Quotes />
     <!-- ******* -->
-    <!-- Loisirs -->
+    <!-- Centres d'intérêts -->
     <!-- ******* -->
-    <h3 class="mt-5 mb-2" ref="loisirs">
-      <strong>Centres d'intérêts</strong>
-    </h3>
+    <section>
+      <h3 class="mt-5 mb-2" ref="loisirs">
+        <strong>Centres d'intérêts</strong>
+      </h3>
+      <p class="text-warning"><i>En cours de construction...</i></p>
+    </section>
     <!-- ****** -->
     <!-- Footer -->
     <!-- ****** -->
@@ -345,6 +357,7 @@ import ThemeButton from "@/components/ThemeButton.vue";
 import Projects from "@/components/Projects.vue";
 import Experience from "@/components/Experience.vue";
 import Formations from "@/components/Formations.vue";
+import Quotes from "@/components/Quotes";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -354,6 +367,7 @@ export default {
     ThemeButton,
     Projects,
     Formations,
+    Quotes,
     Footer,
   },
   data() {
@@ -639,6 +653,7 @@ a:hover {
   height: 5rem;
   top: 3.5rem;
   left: 0.2rem;
+  background: no-repeat;
   background-color: #dc3545;
 }
 .experience-circle-round {
