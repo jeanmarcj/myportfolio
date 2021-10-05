@@ -290,6 +290,35 @@
     <h3 class="mt-5 mb-2" ref="formations">
       <strong>Diplômes et Formations</strong>
     </h3>
+    <Formations
+      header="Développeur Web"
+      company="OpenclassRooms Paris"
+      date="2021"
+      description="Intégration HTML et CSS - JavaScript - Optimisation SEO. 7 projets réalisés (site e-commerce en JavaScript, développement d'un back-end sécurisé en NodeJS, création d’une application complète de messagerie en JavaScript, SQL, en NodeJS (Express) et VueJS. 29 certifications OpenclassRooms"
+    >
+    </Formations>
+    <Formations
+      header="Développeur d'applications Web"
+      company="Institut F2I Vincennes"
+      date="2014 - 2015"
+      description="UML - Gestion de projets (ITIL) - JavaScript - MySQL - PHP - Symfony - .net - Apple Swift"
+    >
+    </Formations>
+    <Formations
+      header="Intégrateur Développeur Web"
+      company="3W Academy Paris"
+      date="2014"
+      description="HTML - CSS - JavaScript - JQuery - PHP - MySql - WordPress, Drupal, PrestaShop - Symfony. Développement de 5 projets."
+    >
+    </Formations>
+    <Formations
+      header="BTS Communication & Actions Publicitaires"
+      company="Ecole Supérieure de Publicité - Paris"
+      description="Formation Chef de Publicité"
+    >
+    </Formations>
+    <Formations header="Bac B" company="Sciences Economiques & Sociales">
+    </Formations>
     <!-- *************** -->
     <!-- Recommandations -->
     <!-- *************** -->
@@ -315,6 +344,7 @@
 import ThemeButton from "@/components/ThemeButton.vue";
 import Projects from "@/components/Projects.vue";
 import Experience from "@/components/Experience.vue";
+import Formations from "@/components/Formations.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -323,6 +353,7 @@ export default {
     Experience,
     ThemeButton,
     Projects,
+    Formations,
     Footer,
   },
   data() {
