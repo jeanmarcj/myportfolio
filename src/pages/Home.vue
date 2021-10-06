@@ -341,7 +341,7 @@
       <h3 class="mt-5 mb-2" ref="loisirs">
         <strong>Centres d'intérêts</strong>
       </h3>
-      <p class="text-warning"><i>En cours de construction...</i></p>
+      <Hobbies />
     </section>
     <!-- ****** -->
     <!-- Footer -->
@@ -358,6 +358,7 @@ import Projects from "@/components/Projects.vue";
 import Experience from "@/components/Experience.vue";
 import Formations from "@/components/Formations.vue";
 import Quotes from "@/components/Quotes";
+import Hobbies from "@/components/Hobbies";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -368,6 +369,7 @@ export default {
     Projects,
     Formations,
     Quotes,
+    Hobbies,
     Footer,
   },
   data() {

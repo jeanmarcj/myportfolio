@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+        "id": "1",
+        "title": "Reservia",
+        "subtitle": "Transformer une maquette en site web",
+        "description": "Chaque carte doit être cliquable. Les filtres ne sont pas fonctionnels mais changent d'apparence au survol. Responsible desktop, tablettes et mobiles.",
+        "technos": ["HTML", "CSS", "Responsive Design"],
+        "imgLink": "reservia.jpg",
+        "projectLink": "https://jeanmarcj.github.io/JeanMarcJuif_2_09022021/",
+        "githubLink": "https://github.com/jeanmarcj/JeanMarcJuif_2_09022021"
+    },
+    {
+        "id": "2",
+        "title": "ohmyfood",
+        "subtitle": "Dynamiser une page web",
+        "description": "Développement d'un site proposant le menu de 4 grands restaurants. Les cartes sont cliquables. Effets graphiques et animations imposées selon un cahier des charges.",
+        "technos": ["HTML", "CSS", "SASS", "Responsive"],
+        "imgLink": "ohmyfood.jpg",
+        "projectLink": "https://jeanmarcj.github.io/JeanMarcJuif_3_09022021/",
+        "githubLink": "https://github.com/jeanmarcj/JeanMarcJuif_3_09022021"
+    },
+    {
+        "id": "3",
+        "title": "Orinoco",
+        "subtitle": "Création d'un MVP d'un site e-commerce",
+        "description": "Développement d'un site e-commerce de 4 pages, en consommant une API fournie. Le MVP doit utiliser l'API localStorage et les promesses.",
+        "technos": ["Bootstrap 5", "Vanilla JavaScript", "localStorage"],
+        "imgLink": "orinoco.jpg",
+        "projectLink": "https://jeanmarcj.github.io/JeanMarcJuif_5_09022021/index.html",
+        "githubLink": "https://github.com/jeanmarcj/JeanMarcJuif_5_09022021"
+    },
+    {
+        "id": "4",
+        "title": "So Pekocko",
+        "subtitle": "Développement d'une API back-end",
+        "description": "Développement d'une API en fonction d'un cahier des charges. Base de données MongoDB. Api sécurisée (bcrypt, cookie-session, helmet, jsonwebtoken, maskdata)",
+        "technos": ["MongoDB", "NodeJS", "Express", "JavaScript"],
+        "imgLink": "sopekocko.jpg",
+        "projectLink": "",
+        "githubLink": "https://github.com/jeanmarcj/JeanMarcJuif_6_09022021"
+    },
+    {
+        "id": "5",
+        "title": "Groupomania Expression App",
+        "subtitle": "Développement d'une API back-end",
+        "description": "Développement d'une application de messagerie. Développement du front et de l'API backend. Base de données MySQL. Framework Vue.",
+        "technos": ["MySQL", "NodeJS", "ExpressJS", "VueJS"],
+        "imgLink": "groupomania.jpg",
+        "projectLink": "",
+        "githubLink": "https://github.com/jeanmarcj/JeanMarcJuif_7_09022021_frontend"
+    },
+    {
+        "id": "6",
+        "title": "Gestion SCI",
+        "subtitle": "Gestion de trésorerie et de documents",
+        "description": "Développement d'une application de gestion documentaire sous Symfony. Archivage des documents et suivi de la trésorie. Dépôt github privé.",
+        "technos": ["MySQL", "PHP", "Symfony 5", "Bootstrap"],
+        "imgLink": "gestsci.jpg",
+        "projectLink": "http://jmjds213.synology.me/sci/public/",
+        "githubLink": ""
+    },
+    {
+        "id": "7",
+        "title": "MyCellar",
+        "subtitle": "Gestion de cave à vin",
+        "description": "Développement d'une application de gestion de cave à vin. Gestion des domaines, des cépages, de la garde... Gestion des emplacements.",
+        "technos": ["MySQL", "PHP", "Symfony 5", "Bootstrap"],
+        "imgLink": "mycellar.jpg",
+        "projectLink": "http://jmjds213.synology.me/myCellar/public/",
+        "githubLink": "https://github.com/jeanmarcj/myCellar"
+    },
+    {
+        "id": "8",
+        "title": "Raphaël Alloux",
+        "subtitle": "Site web",
+        "description": "Site web dévelopé sous WordPress. Mise en ligne sous un serveur mutualisé OVH. Maquette réalisée from scratch.",
+        "technos": ["MySQL", "PHP", "WordPress"],
+        "imgLink": "alloux.jpg",
+        "projectLink": "https://3wcreations.com/alloux/",
+        "githubLink": ""
+    }
+  ]
+}
