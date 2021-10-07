@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <!-- NavBar -->
-    <b-navbar toggleable="lg" type="dark" variant="black">
+    <b-navbar toggleable="lg" type="dark" variant="black" ref="navBarTop">
       <!-- <b-navbar-brand tag="h1" class="mb-0">Jean-Marc Juif</b-navbar-brand> -->
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -178,15 +178,35 @@
         </div>
       </b-card-group>
     </section>
+    <div class="text-right my-5">
+      <b-link @click="scrollMeTo('navBarTop')">
+        <b-icon-arrow-up-square-fill
+          variant="danger"
+          font-scale="1.5"
+          animation="cylon-vertical"
+        >
+        </b-icon-arrow-up-square-fill>
+      </b-link>
+    </div>
     <!-- **************** -->
     <!-- Projets réalisés -->
     <!-- **************** -->
     <section id="projects">
       <h3 class="mt-5 mb-2" ref="portfolio">
-        <strong>Mes réalisations</strong>
+        <strong>Mes projets</strong>
       </h3>
       <Projects />
     </section>
+    <div class="text-right my-5">
+      <b-link @click="scrollMeTo('navBarTop')">
+        <b-icon-arrow-up-square-fill
+          variant="danger"
+          font-scale="1.5"
+          animation="cylon-vertical"
+        >
+        </b-icon-arrow-up-square-fill>
+      </b-link>
+    </div>
     <!-- ********************** -->
     <!-- Parcours professionnel -->
     <!-- ********************** -->
@@ -290,6 +310,16 @@
       <!-- Experience colonne droite end -->
     </div>
     <!-- Experience wrapper end -->
+    <div class="text-right my-5">
+      <b-link @click="scrollMeTo('navBarTop')">
+        <b-icon-arrow-up-square-fill
+          variant="danger"
+          font-scale="1.5"
+          animation="cylon-vertical"
+        >
+        </b-icon-arrow-up-square-fill>
+      </b-link>
+    </div>
     <!-- ********** -->
     <!-- Formations -->
     <!-- ********** -->
@@ -327,6 +357,16 @@
       <Formations header="Bac B" company="Sciences Economiques & Sociales">
       </Formations>
     </section>
+    <div class="text-right my-5">
+      <b-link @click="scrollMeTo('navBarTop')">
+        <b-icon-arrow-up-square-fill
+          variant="danger"
+          font-scale="1.5"
+          animation="cylon-vertical"
+        >
+        </b-icon-arrow-up-square-fill>
+      </b-link>
+    </div>
     <!-- *************** -->
     <!-- Recommandations -->
     <!-- *************** -->
@@ -334,6 +374,16 @@
       <strong>Recommandations</strong>
     </h3>
     <Quotes />
+    <div class="text-right my-5">
+      <b-link @click="scrollMeTo('navBarTop')">
+        <b-icon-arrow-up-square-fill
+          variant="danger"
+          font-scale="1.5"
+          animation="cylon-vertical"
+        >
+        </b-icon-arrow-up-square-fill>
+      </b-link>
+    </div>
     <!-- ******* -->
     <!-- Centres d'intérêts -->
     <!-- ******* -->
@@ -343,6 +393,16 @@
       </h3>
       <Hobbies />
     </section>
+    <div class="text-right my-5">
+      <b-link @click="scrollMeTo('navBarTop')">
+        <b-icon-arrow-up-square-fill
+          variant="danger"
+          font-scale="1.5"
+          animation="cylon-vertical"
+        >
+        </b-icon-arrow-up-square-fill>
+      </b-link>
+    </div>
     <!-- ****** -->
     <!-- Footer -->
     <!-- ****** -->
