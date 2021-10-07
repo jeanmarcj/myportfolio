@@ -18,7 +18,7 @@
           <p>
             Section Sport/Etudes de Chartres. Champion d'Europe Sport/Etudes.
             Vice champion de France en Nationale 1. Sportif de haut niveau
-            pendant plus de 10ans
+            pendant plus de 10 ans
           </p>
         </article>
       </b-col>
@@ -38,7 +38,7 @@
           <hr />
           <p>
             Joueur classé. Entraînement toutes les semaines. Participation à des
-            tournois et championnats les week-end
+            tournois et championnats les week-ends
           </p>
         </article>
       </b-col>
