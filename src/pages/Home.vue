@@ -44,7 +44,7 @@
             "Je cherche un poste de développeur web full-stack.<br />Tenacité,
             confiance, rigueur et persévérance sont mes valeurs.<br />Je
             développe des projets en JavaScript, PHP et Swift. J'utilise des
-            framework reconnus comme Symfony et Vue.JS"
+            framework reconnus comme Xcode, Symfony et Vue.JS"
           </i>
         </p>
         <!-- <footer class="blockquote-footer">Pamela Zave</footer> -->
