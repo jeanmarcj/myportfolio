@@ -301,7 +301,7 @@
         header="Développeur Web"
         company="OpenclassRooms Paris"
         date="2021"
-        description="Intégration HTML et CSS - JavaScript - Optimisation SEO. 7 projets réalisés (site e-commerce en JavaScript, développement d'un back-end sécurisé en NodeJS, création d’une application complète de messagerie en JavaScript, SQL, en NodeJS (Express) et VueJS. 29 certifications OpenclassRooms"
+        description="Intégration HTML et CSS - JavaScript - Optimisation SEO. 7 projets réalisés (site e-commerce en JavaScript, développement d'un back-end sécurisé en NodeJS, création d’une application complète de messagerie en JavaScript, SQL, en NodeJS (Express) et VueJS. 29 certifications OpenclassRooms. Titre professionnel de niveau 5."
       >
       </Formations>
       <Formations
