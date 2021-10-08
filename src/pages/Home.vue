@@ -53,27 +53,37 @@
         </b-col>
       </b-row>
     </header>
-    <h1 class="mt-5">Jean-Marc Juif</h1>
-    <p class="mb-5 h6">
-      <b-icon-phone-fill variant="info"></b-icon-phone-fill>
-      <a href="tel:06 83 03 85 95">+33 (0)6 83 03 85 95</a>&nbsp;-&nbsp;
-      <b-icon-envelope-fill variant="info"></b-icon-envelope-fill>&nbsp;
-      <a href="mailto:jeanmarc.juif@gmail.com">Me contacter par mail</a>
-    </p>
-    <h2 class="my-5"><strong>Développeur Web Full-Stack</strong></h2>
-    <section class="h4">
-      <div class="my-1">
+    <!-- Description -->
+    <b-row>
+      <b-col cols="12" lg="6" class="mt-4">
+        <h1>Jean-Marc Juif</h1>
+        <p class="h5">
+          <b-icon-phone-fill variant="info"></b-icon-phone-fill>
+          <a href="tel:06 83 03 85 95">+33 (0)6 83 03 85 95</a>&nbsp;
+          <b-icon-envelope-fill variant="info"></b-icon-envelope-fill>&nbsp;
+          <a href="mailto:jeanmarc.juif@gmail.com">Me contacter par mail</a>
+        </p>
+      </b-col>
+      <b-col cols="12" lg="6" class="mt-4">
+        <h2 class="mt-lg-1 text-danger">
+          <strong>Développeur Web Full-Stack</strong>
+        </h2>
+      </b-col>
+    </b-row>
+    <!-- Introduction -->
+    <section class="h4 mt-5">
+      <div>
         <a href="./img/certificats/3wAcademy.pdf" target="_blank">
           Diplomé Concepteur & Intégrateur Web par la 3WAcadamy Paris en 2014
         </a>
       </div>
-      <div class="my-1">
+      <div class="mt-3">
         <a href="./img/certificats/F2I_Attestation_Stage.pdf" target="_blank">
           Certifié Concepteur Web par l'Institut Européen F2i de Vincennes en
           2015
         </a>
       </div>
-      <div>
+      <div class="mt-3">
         <a
           href="./img/certificats/OC_Certificat de scolarité JMJ.pdf"
           target="_blank"
@@ -82,8 +92,8 @@
         </a>
       </div>
     </section>
-    <section id="socials">
-      <p class="mt-4 social-icons h4">
+    <section id="socials" class="mt-4">
+      <p class="social-icons h4">
         <a href="https://github.com/jeanmarcj" target="_blank">
           <b-icon-github class="mr-4"></b-icon-github>
         </a>
