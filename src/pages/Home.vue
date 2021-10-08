@@ -29,30 +29,29 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <!-- NavBar End -->
-    <header class="d-flex justify-content-between align-items-center">
-      <b-img
-        :src="require('../assets/jmj_img.jpg')"
-        alt="Photo de Jean-Marc Juif"
-        rounded="circle"
-        v-bind="mainProps"
-      >
-      </b-img>
-      <blockquote class="blockquote text-center">
-        <p class="lead mt-5 ml-4">
-          <i>
-            "Je cherche un poste de développeur web full-stack.<br />Tenacité,
-            confiance, rigueur et persévérance sont mes valeurs.<br />Je
-            développe des projets en JavaScript, PHP et Swift. J'utilise des
-            framework reconnus comme Xcode, Symfony et Vue.JS"
-          </i>
-        </p>
-        <!-- <footer class="blockquote-footer">Pamela Zave</footer> -->
-      </blockquote>
-      <!-- <p class="lead mb-1 ml-4">
-        "The purpose of software engineering is to control complexity, not to
-        create it."
-      </p> -->
+    <!-- Header -->
+    <header>
+      <b-row class="align-items-center">
+        <b-col cols="12" md="3">
+          <b-img
+            :src="require('../assets/jmj_img.jpg')"
+            alt="Photo de Jean-Marc Juif"
+            rounded="circle"
+            v-bind="mainProps"
+          >
+          </b-img>
+        </b-col>
+        <b-col cols="12" md="9">
+          <p class="lead ml-sm-0 ml-md-5">
+            <i>
+              "Je cherche un poste de développeur web full-stack.<br />Tenacité,
+              confiance, rigueur et persévérance sont mes valeurs.<br />Je
+              développe des projets en JavaScript, PHP et Swift. J'utilise des
+              framework reconnus comme Xcode, Symfony et Vue.JS"
+            </i>
+          </p>
+        </b-col>
+      </b-row>
     </header>
     <h1 class="mt-5">Jean-Marc Juif</h1>
     <p class="mb-5 h6">
