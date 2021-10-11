@@ -160,6 +160,7 @@ export default {
       background-repeat: no-repeat;
       background-size: 5%;
       color: var(--accent-color);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
       p {
         padding: 2.5em 3rem 1rem 3rem;
       }
