@@ -1,7 +1,13 @@
 <template>
   <section id="about">
     <!-- Quote #1 -->
-    <div class="quotes-wrapper">
+    <div
+      class="
+        quotes-wrapper
+        d-flex
+        justify-content-center justify-content-md-start
+      "
+    >
       <blockquote
         class="blockquote"
         :style="{
@@ -23,7 +29,13 @@
       </blockquote>
     </div>
     <!-- Quote #2 -->
-    <div class="quotes-wrapper d-flex flex-row flex-row-reverse">
+    <div
+      class="
+        quotes-wrapper
+        d-flex
+        justify-content-center justify-content-md-end
+      "
+    >
       <blockquote
         class="blockquote"
         :style="{
@@ -48,7 +60,13 @@
       </blockquote>
     </div>
     <!-- Quote #3 -->
-    <div class="quotes-wrapper d-flex">
+    <div
+      class="
+        quotes-wrapper
+        d-flex
+        justify-content-center justify-content-md-start
+      "
+    >
       <blockquote
         class="blockquote"
         :style="{
@@ -73,7 +91,13 @@
       </blockquote>
     </div>
     <!-- Quote #4 -->
-    <div class="quotes-wrapper d-flex flex-row-reverse">
+    <div
+      class="
+        quotes-wrapper
+        d-flex
+        justify-content-center justify-content-md-end
+      "
+    >
       <blockquote
         class="blockquote"
         :style="{
@@ -95,7 +119,13 @@
       </blockquote>
     </div>
     <!-- Quote #5 -->
-    <div class="quotes-wrapper d-flex">
+    <div
+      class="
+        quotes-wrapper
+        d-flex
+        justify-content-center justify-content-md-start
+      "
+    >
       <blockquote
         class="blockquote"
         :style="{
@@ -116,7 +146,13 @@
       </blockquote>
     </div>
     <!-- Quote #6 -->
-    <div class="quotes-wrapper d-flex flex-row-reverse">
+    <div
+      class="
+        quotes-wrapper
+        d-flex
+        justify-content-center justify-content-md-end
+      "
+    >
       <blockquote
         class="blockquote"
         :style="{
