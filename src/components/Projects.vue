@@ -84,6 +84,7 @@ export default {
   position: relative;
   //width: 947px;
   //height: 308px;
+  margin-top: 3rem;
   .project-text {
     padding: 1.5rem;
     .project-text-header {
@@ -138,6 +139,8 @@ export default {
       img {
         border-radius: 0.6rem;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        opacity: 0.1;
+        width: 100%;
       }
     }
   }
@@ -145,8 +148,20 @@ export default {
 
 @media (min-width: 768px) {
   .project-wrapper {
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
+    // margin-bottom: 2rem;
+    .project-img {
+      width: 58.33%;
+      top: 0.5rem;
+      left: 0;
+      right: 0;
+      a {
+        img {
+          // border: 1px solid blue;
+          opacity: 1;
+        }
+      }
+    }
   }
   .project-text {
     padding: 0;
@@ -183,11 +198,10 @@ export default {
       justify-content: flex-end;
     }
   }
-  .project-img {
-    width: 58.33%;
-    top: -1.5rem;
-    left: 0;
-    right: 0;
+}
+@media (min-width: 768px) {
+  .project-wrapper {
+    margin-top: 7rem;
   }
 }
 </style>
