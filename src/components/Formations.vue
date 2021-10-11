@@ -70,7 +70,11 @@ export default {
     display: block;
   }
   .formation-raw-text {
-    // border: 1px solid green;
+    margin-left: -1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .formation-raw-text {
     margin-left: -2.5rem;
   }
 }
