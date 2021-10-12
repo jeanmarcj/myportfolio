@@ -124,7 +124,12 @@
       <h4 class="mb-2">Front-End</h4>
       <!-- front skills -->
       <b-card-group deck>
-        <div v-for="skill in frontSkills" :key="skill.id">
+        <div
+          v-for="skill in frontSkills"
+          :key="skill.id"
+          v-b-tooltip.hover.v-primary
+          v-b-tooltip.hover.html="skill.tipData"
+        >
           <b-link :href="skill.link" target="_blank">
             <b-card
               :title="skill.title"
@@ -144,7 +149,12 @@
       <!-- Back-End skills -->
       <h4 class="mt-4 mb-2">Back-End</h4>
       <b-card-group deck>
-        <div v-for="skill in backSkills" :key="skill.id">
+        <div
+          v-for="skill in backSkills"
+          :key="skill.id"
+          v-b-tooltip.hover.v-primary
+          v-b-tooltip.hover.html="skill.tipData"
+        >
           <b-link :href="skill.link" target="_blank">
             <b-card
               :title="skill.title"
@@ -456,6 +466,11 @@ export default {
           title: "Git GitHub",
           img: "img/logos/git_logo.png",
           alt: "Git logo",
+          tipData: {
+            title:
+              "Utiliser Git. <a href='./img/certificats/OC_Certificat_Git.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 2,
@@ -463,6 +478,11 @@ export default {
           title: "html5",
           img: "img/logos/html_logo.png",
           alt: "html logo",
+          tipData: {
+            title:
+              "Intégrer une maquette. <a href='./img/certificats/OC_Certificat_Integrer_Maquette.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 3,
@@ -470,6 +490,11 @@ export default {
           title: "CSS3",
           img: "img/logos/css.svg",
           alt: "CSS logo",
+          tipData: {
+            title:
+              "Créer des animations CSS. <a href='./img/certificats/OC_Certificat_Anim_CSS.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 4,
@@ -477,6 +502,11 @@ export default {
           title: "Sass",
           img: "img/logos/sass_logo.png",
           alt: "Sass logo",
+          tipData: {
+            title:
+              "Utiliser SASS. <a href='./img/certificats/OC_Certificat_SASS.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 5,
@@ -491,6 +521,11 @@ export default {
           title: "JavaScript",
           img: "img/logos/javascript_logo.png",
           alt: "JavaScript logo",
+          tipData: {
+            title:
+              "JavaScript pour le web. <a href='./img/certificats/OC_Certificat_JS_pour_le_web.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 7,
@@ -504,7 +539,12 @@ export default {
           link: "https://vuejs.org",
           title: "Vue.js",
           img: "img/logos/vuejs_logo.png",
-          alt: "Vuejs logo",
+          alt: "Vue.js logo",
+          tipData: {
+            title:
+              "Créer une appli web avec Vue.js. <a href='./img/certificats/OC_Certificat_VueJS.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
       ],
       backSkills: [
@@ -521,6 +561,11 @@ export default {
           title: "mongoDB",
           img: "img/logos/mongoDB_logo.png",
           alt: "mongoDB logo",
+          tipData: {
+            title:
+              "Passer au full-stack. <a href='./img/certificats/OC_Certificat_MongDB_NodeJS_Express.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 3,
@@ -528,6 +573,11 @@ export default {
           title: "API Rest",
           img: "img/logos/APIRest_logo.png",
           alt: "API Rest logo",
+          tipData: {
+            title:
+              "API REST. <a href='./img/certificats/OC_Certificat_API_REST.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 4,
@@ -555,7 +605,12 @@ export default {
           link: "https://symfony.com/",
           title: "Symfony",
           img: "img/logos/symfony_logo.png",
-          alt: "Doctrine logo",
+          alt: "Symfony logo",
+          tipData: {
+            title:
+              "Développez avec Symfony. <a href='./img/certificats/OC_Certificat_DEV_WEB_SYmfony.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 8,
@@ -563,6 +618,11 @@ export default {
           title: "NodeJS",
           img: "img/logos/nodejs_logo.png",
           alt: "Nodejs logo",
+          tipData: {
+            title:
+              "Passer au full-stack. <a href='./img/certificats/OC_Certificat_MongDB_NodeJS_Express.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
         {
           id: 9,
@@ -577,6 +637,11 @@ export default {
           title: "ExpressJS",
           img: "img/logos/express_logo.png",
           alt: "Sequelize ORM logo",
+          tipData: {
+            title:
+              "Passer au full-stack. <a href='./img/certificats/OC_Certificat_MongDB_NodeJS_Express.pdf' target='_blank'>Voir le certificat</a>",
+            html: true,
+          },
         },
       ],
       mobileSkills: [
