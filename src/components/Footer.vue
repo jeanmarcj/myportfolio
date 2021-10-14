@@ -2,14 +2,26 @@
   <div class="footer-wrapper">
     <hr />
     <footer class="py-5">
-      <ul class="">
-        <li class="">Portfolio développé en HTML, SASS et JavaScript</li>
-        <li class="">
-          Framework
-          <a href="https://fr.vuejs.org/index.html" target="_blank">Vue.JS</a>
+      <ul>
+        <li class="text-secondary">
+          Portfolio développé en HTML, SASS et JavaScript
         </li>
-        <li class="">
-          <a href="https://github.com/jeanmarcj/myportfolio" target="_blank">
+        <li class="text-secondary">
+          Framework
+          <a
+            href="https://fr.vuejs.org/index.html"
+            target="_blank"
+            class="text-secondary"
+          >
+            Vue.JS
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/jeanmarcj/myportfolio"
+            target="_blank"
+            class="text-secondary"
+          >
             <b-icon-github scale="1.2"></b-icon-github>
           </a>
         </li>
