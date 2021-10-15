@@ -44,10 +44,10 @@
         <b-col cols="12" md="9">
           <p class="lead ml-sm-0 ml-md-5">
             <i>
-              "Je cherche un poste de développeur web full-stack.<br />Tenacité,
+              "Je cherche un poste de développeur web full-stack.<br />Ténacité,
               confiance, rigueur et persévérance sont mes valeurs.<br />Je
               développe des projets en JavaScript, PHP et Swift. J'utilise des
-              framework reconnus comme Xcode, Symfony et Vue.JS"
+              frameworks reconnus comme Xcode, Symfony et Vue.JS"
             </i>
           </p>
         </b-col>
