@@ -189,7 +189,7 @@ export default {
   .quotes-wrapper {
     margin-bottom: 3rem;
     blockquote {
-      width: 65%;
+      width: 100%;
       border-radius: 0.8rem;
       background-color: var(--background-color-inverse);
       background-position: 5% 5%;
@@ -198,13 +198,20 @@ export default {
       color: var(--accent-color);
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
       p {
-        padding: 2.5em 3rem 1rem 3rem;
+        padding: 2.5em 3rem 0rem 3rem;
       }
       p > i {
         color: var(--accent-color);
       }
       footer {
-        padding-bottom: 2rem;
+        padding: 2rem;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .quotes-wrapper {
+      blockquote {
+        width: 65%;
       }
     }
   }
