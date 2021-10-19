@@ -57,11 +57,11 @@
     <b-row>
       <b-col cols="12" lg="6" class="mt-4">
         <h1>Jean-Marc Juif</h1>
-        <p class="h5">
+        <p class="h6">
           <b-icon-phone-fill variant="info"></b-icon-phone-fill>
           <a href="tel:06 83 03 85 95">+33 (0)6 83 03 85 95</a>&nbsp;
           <b-icon-envelope-fill variant="info"></b-icon-envelope-fill>&nbsp;
-          <a href="mailto:jeanmarc.juif@gmail.com">Me contacter par mail</a>
+          <a href="mailto:jeanmarc.juif@gmail.com">jeanmarc.juif@gmail.com</a>
         </p>
       </b-col>
       <b-col cols="12" lg="6" class="mt-4">
