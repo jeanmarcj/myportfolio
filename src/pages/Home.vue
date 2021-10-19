@@ -31,7 +31,7 @@
     </b-navbar>
     <!-- Header -->
     <header>
-      <b-row class="align-items-center">
+      <b-row class="d-flex align-items-center">
         <b-col cols="12" md="3">
           <b-img
             :src="require('../assets/jmj_img.jpg')"
@@ -42,20 +42,24 @@
           </b-img>
         </b-col>
         <b-col cols="12" md="9">
-          <p class="lead ml-sm-0 ml-md-5">
-            <i>
-              "Je cherche un poste de développeur web full-stack.<br />Ténacité,
-              confiance, rigueur et persévérance sont mes valeurs.<br />Je
-              développe des projets en JavaScript, PHP et Swift. J'utilise des
-              frameworks reconnus comme Xcode, Symfony et Vue.JS"
-            </i>
+          <p class="lead ml-sm-0 ml-md-5 mt-md-3">
+            <strong>
+              <i>
+                "Développeur depuis l'âge de 8 ans, je viens de valider avec
+                succès la formation de développeur web chez OpenclassRooms.<br />
+                Fullstack developer, j'adore les challenges liès au
+                développement d'applications modernes et à la gestion de
+                l'information. J'utilise des frameworks reconnus comme Symfony
+                ou Vue.js"
+              </i>
+            </strong>
           </p>
         </b-col>
       </b-row>
     </header>
     <!-- Description -->
-    <b-row>
-      <b-col cols="12" lg="6" class="mt-4">
+    <b-row class="mt-4">
+      <b-col cols="12" lg="6">
         <h1>Jean-Marc Juif</h1>
         <p class="h6">
           <b-icon-phone-fill variant="info"></b-icon-phone-fill>
@@ -64,9 +68,9 @@
           <a href="mailto:jeanmarc.juif@gmail.com">jeanmarc.juif@gmail.com</a>
         </p>
       </b-col>
-      <b-col cols="12" lg="6" class="mt-4">
+      <b-col cols="12" lg="6">
         <h2 class="mt-lg-1 text-danger">
-          <strong>Développeur Web Full-Stack</strong>
+          <strong>Développeur Web Fullstack</strong>
         </h2>
       </b-col>
     </b-row>
@@ -85,7 +89,7 @@
       </div>
       <div class="mt-3">
         <a
-          href="./img/certificats/OC_Certificat de scolarité JMJ.pdf"
+          href="./img/certificats/OC_Certificat_scolaire_JMJ.pdf"
           target="_blank"
         >
           Diplomé OpenclassRooms Paris parcours Développeur Web en 2021
