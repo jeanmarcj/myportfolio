@@ -95,8 +95,9 @@
           Diplomé OpenclassRooms Paris parcours Développeur Web en 2021
         </a>
       </div>
+      <div class="mt-3">Anglais : Professionnel</div>
     </section>
-    <section id="socials" class="mt-4">
+    <section id="socials" class="mt-5">
       <p class="social-icons h4">
         <a href="https://github.com/jeanmarcj" target="_blank">
           <b-icon-github class="mr-4"></b-icon-github>
