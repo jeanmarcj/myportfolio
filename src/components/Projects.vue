@@ -2,7 +2,7 @@
   <div>
     <p class="h4">
       Voici quelques-uns de mes projets favoris.<br />Je les ai développés et
-      designés "from scratch".
+      mis en page "from scratch".
     </p>
     <div class="project-wrapper" v-for="project in projects" :key="project.id">
       <div class="project-text">

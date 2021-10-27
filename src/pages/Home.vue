@@ -47,10 +47,9 @@
               <i>
                 "Développeur depuis l'âge de 8 ans, je viens de valider avec
                 succès la formation de développeur web chez OpenclassRooms.<br />
-                Fullstack developer, j'adore les challenges liès au
-                développement d'applications modernes et à la gestion de
-                l'information. J'utilise des frameworks reconnus comme Symfony
-                ou Vue.js"
+                Fullstack developer, j'aime les challenges liès au développement
+                d'applications modernes et à la gestion de l'information.
+                J'utilise des frameworks reconnus comme Symfony ou Vue.js"
               </i>
             </strong>
           </p>

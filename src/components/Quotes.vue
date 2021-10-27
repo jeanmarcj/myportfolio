@@ -17,10 +17,10 @@
       >
         <p class="lead">
           <i>
-            Projet responsif. Sémantique html OK. Validation w3c. Présentation
-            fluide et structurée. Tous les choix ont été justifié. Chaque point
-            du brief a été clairement expliqué. Bonne compréhension de
-            l'intégration d'une maquette. Bonne compréhension de Git.
+            Projet responsive design. Sémantique html OK. Validation w3c.
+            Présentation fluide et structurée. Tous les choix ont été justifiés.
+            Chaque point du brief a été clairement expliqué. Bonne compréhension
+            de l'intégration d'une maquette. Bonne compréhension de Git.
           </i>
         </p>
         <footer class="blockquote-footer text-center">
